@@ -8,7 +8,7 @@
               <h3 class="text-base font-semibold text-gray-900">Task List</h3>
             </div>
             <div class="ml-4 mt-2 shrink-0">
-              <BaseButton @click="startCreateTask"> New Task </BaseButton>
+              <BaseButton @click="handleClick"> New Task </BaseButton>
             </div>
           </div>
         </template>
@@ -24,8 +24,8 @@
 import BaseCard from "@/components/base/BaseCard.vue";
 import BaseButton from "@/components/base/BaseButton.vue";
 
-const startCreateTask = () => {
-  console.log("create task");
+const handleClick = () => {
+  console.log("new task");
 };
 </script>
 
